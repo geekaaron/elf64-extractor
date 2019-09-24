@@ -30,16 +30,19 @@ static const struct option opts[] =
 	{ NULL, 0, NULL, 0 }
 };
 
+static const char *version =
+	"\n	Elf Extractor - ee v0.1 for linux64\n";
+
 static const char *usage =
 	"Usage: ee [options] <target file>\n"
-	"	-E, --ehdr -	Extract elf header\n"
-	"	-P, --phdr -	Extract program header\n"
-	"	-S, --shdr -	Extract section header\n"
-	"	-p, --segment -	Extract segment by index\n"
+	"	-E, --ehdr		-	Extract elf header\n"
+	"	-P, --phdr		-	Extract program header\n"
+	"	-S, --shdr		-	Extract section header\n"
+	"	-p, --segment <index>	-	Extract segment by index\n"
 	"		0: PHDR, 1: INTERP, 2: TEXT, 3: DATA, 4:DYNAMIC, 5: NOTE, 6: GNU_EH_FRAME, 7: GNU_STACK, 8: GNU_RELRO\n"
-	"	-s, --section -	Extract section by name\n"
-	"	-o, --output -	Extract to specified file\n"
-	"	-h, --help -	Show usage\n";
+	"	-s, --section <name>	-	Extract section by name\n"
+	"	-o, --output <file>	-	Extract to specified file\n"
+	"	-h, --help		-	Show usage\n";
 
 /* For future */
 /*
@@ -256,6 +259,8 @@ int main(int argc, char *argv[])
 {
 	int opt, flags = 0;
 	char *efile, *ofile;
+
+	printf("%s\n", version);
 
 	if (argc < 3)
 	{
