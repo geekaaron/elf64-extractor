@@ -31,7 +31,7 @@ static const struct option opts[] =
 };
 
 static const char *version =
-	"\n	Elf Extractor - ee v0.1 for linux64\n";
+	"\n	Elf Extractor - ee v0.1 for elf64\n";
 
 static const char *usage =
 	"Usage: ee [options] <target file>\n"

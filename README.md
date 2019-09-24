@@ -1,4 +1,4 @@
-# Elf Extractor - ee v0.1 for linux64
+# Elf Extractor - ee v0.1 for elf64
 
 # Usage
 
