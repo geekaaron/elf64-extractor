@@ -24,7 +24,6 @@ static const struct option opts[] =
 	{ "shdr", 0, NULL, 'S' },
 	{ "segment", 0, NULL, 'p' },
 	{ "section", 0, NULL, 's' },
-	{ "file", 0, NULL, 'f' },
 	{ "output", 0, NULL, 'o' },
 	{ "help", 0, NULL, 'h' },
 	{ NULL, 0, NULL, 0 }
