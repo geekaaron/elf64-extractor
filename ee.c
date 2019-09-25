@@ -22,9 +22,9 @@ static const struct option opts[] =
 	{ "ehdr", 0, NULL, 'E' },
 	{ "phdr", 0, NULL, 'P' },
 	{ "shdr", 0, NULL, 'S' },
-	{ "segment", 0, NULL, 'p' },
-	{ "section", 0, NULL, 's' },
-	{ "output", 0, NULL, 'o' },
+	{ "segment", 1, NULL, 'p' },
+	{ "section", 1, NULL, 's' },
+	{ "output", 1, NULL, 'o' },
 	{ "help", 0, NULL, 'h' },
 	{ NULL, 0, NULL, 0 }
 };
